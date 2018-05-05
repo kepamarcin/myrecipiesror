@@ -1,2 +1,23 @@
+$navbar-default-bg: #073b15;
+$brand-success: lighten(#073b15, 15%);
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+	float:left;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	color:#fff;
+	&:hover{
+		
+		text-decoration: none;
+	}
+}
+.jumbotron{
+	background-image: asset-url('bg.jpg');
+	height: 300px;
+	background-size: cover;
+}
