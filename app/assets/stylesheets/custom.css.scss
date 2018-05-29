@@ -1,5 +1,15 @@
-$navbar-default-bg: #073b15;
-$brand-success: lighten(#073b15, 15%);
+$pri-color: #073b15;
+$link-color: lighten($pri-color, 10%);
+$brand-primary: $link-color;
+$navbar-default-bg: $pri-color;
+$brand-success: lighten($pri-color, 15%);
+$link-color: lighten($pri-color, 10%);
+$font-family-sans-serif: -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -20,4 +30,20 @@ $brand-success: lighten(#073b15, 15%);
 	background-image: asset-url('bg.jpg');
 	height: 300px;
 	background-size: cover;
+}
+h4{
+	font-weight:bolder;
+	font-size: initial;
+}
+.image-circle{
+	border-radius: 50%;
+	margin-right: .5em;
+}
+.center{
+	text-align: center;
+}
+.field_with_errors{
+	& label{
+		color:darkred;
+	}
 }
